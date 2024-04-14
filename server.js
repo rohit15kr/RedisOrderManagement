@@ -145,11 +145,6 @@ app.post("/api/client/", (req, res) => {
           .status(400)
           .json({ error: "OrderId,TenantId,OMSId,ClientId is required" });
       }
-      if (OrderType != 1 || OrderType != 2) {
-        return res
-          .status(400)
-          .json({ error: "Order Type can be either 1 or 2" });
-      }
       redis.exists(`${TenantId}_${OMSId}:${ClientId}`, (err, exists) => {
         if (err) {
           console.error("Redis error:", err);
