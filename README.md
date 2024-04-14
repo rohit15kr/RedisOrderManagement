@@ -1,10 +1,10 @@
 to run the file just 
 
 step 1:
- npm i 
+ npm install
 
  step 2 : 
- nodemon serve.js
+ nodemon server.js
 
 check for api 
 step 1:
@@ -12,7 +12,7 @@ step 1:
 
 http://localhost:3005/api/client/
 
-then add a body as request in json data sample data for both client info (1121 msgType) is 
+then add a body as request in json data sample data for client info (1121 msgType) is 
 
 {
     "MsgType": 1121,
@@ -24,7 +24,7 @@ then add a body as request in json data sample data for both client info (1121 m
     "Remark": 6633
 }
 
-sample data for both  order info (1120 msgType) is 
+sample data for  order info (1120 msgType) is 
 {
     "MsgType": 1120,
     "OperationType": 100,
